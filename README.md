@@ -71,42 +71,42 @@ DB_NAME=marketplace
 
 ### How to Use
 
-1. Register
+- Register
 Di API Register kita menginput data baru untuk dipakai untuk login nantinya, jika dia seorang merchant maka role nya adalah merchant, jika customer rolenya adalah customer
 ```
 localhost:8080/auth/register
 ```
 ![Screenshot from 2024-11-23 00-53-07](https://github.com/user-attachments/assets/47aedfed-a7c2-4e3d-85ea-a265e249a943)
 
-2. Login
+- Login
 Selanjutnya melakukan login dengan email dan password yang sudah dibuat sebelumnya, dan jika berhasil login maka akan diberi token.
 ```
 localhost:8080/auth/login
 ```
 ![Screenshot from 2024-11-23 00-53-28](https://github.com/user-attachments/assets/2da4fd5c-a762-4484-bb7d-3f554e3c2de2)
 
-3. Cara Memasukan Token JWT
+- Cara Memasukan Token JWT
 Masuk ke menu Authotization di *[Postman](https://www.postman.com/)*,Ubah Auth Type nya menjadi "Bearer Token" dan masukan token yang diberikan sewaktu login
 
 ![Screenshot from 2024-11-23 00-54-28](https://github.com/user-attachments/assets/0fe452c9-7ada-479a-8bae-dd5e09566061)
 
 ![Screenshot from 2024-11-23 00-54-41](https://github.com/user-attachments/assets/66148506-5641-4bc7-91a4-bc59729bf167)
 
-3. Add Product / List Product
+- Add Product / List Product
 Jika anda adalah seorang Merchant maka bisa melakukan create product dengan method POST, dan jika anda seorang customer maka menggunakan method GET seperti contoh dibawah ini
 ```
 localhost:8080/products
 ```
 ![Screenshot from 2024-11-23 00-53-47](https://github.com/user-attachments/assets/2aec71a5-65ea-497f-b59e-cdb471011942)
    
-4. Transaksi
+- Transaksi
 Menu ini hanya bisa digunakan oleh customer saja, dengan Method POST 
 ```
 localhost:8080/transactions
 ```
 ![Screenshot from 2024-11-23 00-53-59](https://github.com/user-attachments/assets/b2528296-047c-45c9-876e-4173ee321001)
 
-5. View Transaksi
+- View Transaksi
 View transaksi untuk merchant, jangan lupa login sebagai merchant dan masukan token JWT nya
 sebagai berikut :
 ```
